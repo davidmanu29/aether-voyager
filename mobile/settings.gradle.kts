@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AetherVoyager"
 include(":app")
+include(":networkengine")
