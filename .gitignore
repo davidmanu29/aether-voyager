@@ -34,3 +34,37 @@ output-metadata.json
 
 # Google Services
 google-services.json
+
+
+#Visual Studio ignores
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Dd]ebug*/
+[Rr]elease*/
+
+# NuGet packages
+*.nupkg
+**/packages/*
+!.*/packages/build/
+
+# Logs
+*.log
+
+# Secrets / env files
+.env
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+appsettings.json
+launchSettings.json
