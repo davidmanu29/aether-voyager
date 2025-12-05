@@ -35,3 +35,13 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
         working-directory: mobile
+        
+        #API BUILD
+        
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build .NET backend
+        run: dotnet build ./backend/AetherAPI/AetherAPI.csproj --configuration Release
