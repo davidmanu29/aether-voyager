@@ -45,3 +45,15 @@ jobs:
 
       - name: Build .NET backend
         run: dotnet build ./backend/AetherAPI/AetherAPI.csproj --configuration Release
+
+        #RUST build
+        
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - name: Build Rust bridge
+        run: cargo build --release
+        working-directory: mqtt2bridge
